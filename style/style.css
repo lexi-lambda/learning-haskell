@@ -1,0 +1,173 @@
+
+/* Fonts, imported to make scribble easier. */
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
+
+/* Monospace: */
+.maincolumn, .refpara, .refelem, .tocset, .stt, .hspace, .refparaleft, .refelemleft {
+  font-family: "Source Code Pro", Inconsolata, Consola, monospace;
+}
+
+/* Serif: */
+.main, .refcontent, .tocview, .tocsub, .sroman, i {
+  font-family: "Crimson Text", Baskerville, serif;
+}
+
+/* Sans-serif: */
+.version, .versionNoNav, .ssansserif {
+  font-family: sans-serif;
+}
+
+/* --------------- LINKS --------------- */
+
+a {
+  color: #777;
+  transition: color .2s ease-in-out;
+}
+
+a:hover {
+  color: #444;
+}
+
+/* ------------------------------------- */
+
+
+.maincolumn {
+  width: 39em;
+  margin: 0 auto;
+}
+
+/* ---------------- TOC ---------------- */
+
+.tocset {
+  position: absolute;
+  width: 16em;
+  left: 50%;
+  right: 50%;
+  margin-top: 10px;
+  margin-left: -40em;
+}
+
+.tocview, .tocsub {
+  background-color: transparent;
+}
+
+.tocviewtoggle {
+  position: relative;
+  font-size: 1em;
+  margin-right: 8px;
+  top: -3px;
+  color: #333;
+}
+
+.tocviewtitle .tocviewselflink, .tocviewtitle .tocviewlink {
+  font-size: 2.5em;
+  color: #222;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.tocviewsublistonly {
+  font-size: 1.2em;
+  border-left: 2px solid #f6f6f6;
+  margin-left: 0.3em;
+}
+
+.tocviewsublistonly .tocviewlink, .tocviewsublistonly .tocviewselflink {
+  margin-left: 6px;
+  color: #777;
+}
+
+.tocviewsublistonly .tocviewlink:hover, .tocviewsublistonly .tocviewselflink:hover {
+  color: #444;
+}
+
+.toptoclink {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #777;
+}
+
+.toptoclink:hover {
+  color: #444;
+}
+
+/* ------------------------------------- */
+
+/* ---------------- NAV ---------------- */
+
+.navsettop {
+  background-color: transparent;
+  border-bottom: 2px solid #f8f8f8;
+}
+
+.navsetbottom {
+  background-color: transparent;
+  border-top: 2px solid #f8f8f8;
+}
+
+/* ------------------------------------- */
+
+.main {
+  font-size: 1.2em;
+}
+
+.main > p {
+  line-height: 1.4em;
+  text-align: justify;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+
+h2 {
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+h3, h4, h5, h6 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+}
+
+/* Code Inline / Blocks */
+.stt {
+  font-size: 0.85rem;
+}
+
+/* tty blocks */
+.code-tty > table {
+  width: 100%;
+  background-color: #383838;
+  color: white;
+  padding: 15px 35px;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+  border-radius: 10px;
+}
+
+/* irc blocks */
+.irc-quote {
+  padding-left: 1em;
+  border-left: 3px solid #f6f6f6;
+}
+
+.irc-channel::before {
+  content: '— in channel #';
+  color: #ccc;
+}
+.irc-channel {
+  position: relative;
+  font-style: oblique;
+  font-size: 0.7em;
+  color: #888;
+  margin-left: 40px;
+  top: -5px;
+  opacity: 0.5;
+  cursor: default;
+  transition: opacity .2s ease-in-out;
+}
+.irc-channel:hover {
+  opacity: 1;
+}

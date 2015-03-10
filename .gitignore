@@ -1,0 +1,12 @@
+
+# OS X metadata files
+.DS_Store
+
+# autosave files
+*~
+
+# compiled dir
+compiled/
+
+# generated documentation
+/index/
