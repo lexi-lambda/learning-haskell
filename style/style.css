@@ -67,18 +67,28 @@ a:hover {
   text-decoration: none;
 }
 
-.tocviewsublistonly {
+.tocviewsublistonly, .tocviewsublisttop, .tocviewsublistbottom {
   font-size: 1.2em;
   border-left: 2px solid #f6f6f6;
   margin-left: 0.3em;
 }
 
-.tocviewsublistonly .tocviewlink, .tocviewsublistonly .tocviewselflink {
+.tocviewsublistonly .tocviewlink,
+.tocviewsublistonly .tocviewselflink,
+.tocviewsublisttop .tocviewlink,
+.tocviewsublisttop .tocviewselflink,
+.tocviewlist .tocviewlink,
+.tocviewlist .tocviewselflink {
   margin-left: 6px;
   color: #777;
 }
 
-.tocviewsublistonly .tocviewlink:hover, .tocviewsublistonly .tocviewselflink:hover {
+.tocviewsublistonly .tocviewlink:hover,
+.tocviewsublistonly .tocviewselflink:hover,
+.tocviewsublisttop .tocviewlink:hover,
+.tocviewsublisttop .tocviewselflink:hover,
+.tocviewlist .tocviewlink:hover,
+.tocviewlist .tocviewselflink:hover {
   color: #444;
 }
 
@@ -89,6 +99,14 @@ a:hover {
 }
 
 .toptoclink:hover {
+  color: #444;
+}
+
+.toclink {
+  color: #777;
+}
+
+.toclink:hover {
   color: #444;
 }
 
@@ -132,8 +150,9 @@ h3, h4, h5, h6 {
 }
 
 /* Code Inline / Blocks */
-.stt {
+.stt, .hspace {
   font-size: 0.85rem;
+  line-height: 1.25rem;
 }
 
 /* tty blocks */
@@ -142,6 +161,16 @@ h3, h4, h5, h6 {
   background-color: #383838;
   color: white;
   padding: 15px 35px;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+  border-radius: 10px;
+}
+
+/* code blocks */
+.code-block > table {
+  width: 100%;
+  background-color: #fcfcfc;
+  padding: 15px 20px;
   margin-top: 1.3em;
   margin-bottom: 1.3em;
   border-radius: 10px;

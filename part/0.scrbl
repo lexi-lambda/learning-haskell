@@ -2,8 +2,6 @@
 
 @(require "../shared.rkt")
 
-@(define ~~ (string-append -~- -~-))
-
 @title{Day 0: A whole lot of nothing}
 
 @irc["racket"]{
