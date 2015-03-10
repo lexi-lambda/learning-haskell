@@ -169,7 +169,7 @@ h3, h4, h5, h6 {
 /* code blocks */
 .code-block > table {
   width: 100%;
-  background-color: #fcfcfc;
+  background-color: #f9f9f9;
   padding: 15px 20px;
   margin-top: 1.3em;
   margin-bottom: 1.3em;
