@@ -2,7 +2,7 @@
 
 @(require "../shared.rkt")
 
-@title{Day 0: A whole lot of nothing}
+@title[#:tag "day-0"]{Day 0: A whole lot of nothing}
 
 @irc["racket"]{
 <lexi-lambda> Alright, I've given in and I'm trying out Haskell some more. How long do you think it'll be before I miss macros?

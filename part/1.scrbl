@@ -2,7 +2,7 @@
 
 @(require "../shared.rkt")
 
-@title{Day 1: Getting up and running}
+@title[#:tag "day-1"]{Day 1: Getting up and running}
 
 Alright. So. I'm going to try this again. Starting from scratch and doing it right this time.
 
