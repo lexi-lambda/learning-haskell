@@ -1,6 +1,7 @@
 #lang racket
 
 (provide ~~
+         blockquote-style blockquote
          tty-style terminal
          irc-style irc
          codeblock-style codeblock)
@@ -9,6 +10,9 @@
          scribble/core)
 
 (define ~~ (string-append -~- -~-))
+
+(define blockquote-style
+  (make-style "blockquote" empty))
 
 (define tty-style
   (make-style "code-tty" empty))
@@ -20,6 +24,9 @@
   (make-style "irc-quote" empty))
 (define irc-channel-style
   (make-style "irc-channel" empty))
+
+(define (blockquote . content)
+  (apply nested #:style blockquote-style content))
 
 (define (terminal . content)
   (nested #:style tty-style (apply verbatim content)))
