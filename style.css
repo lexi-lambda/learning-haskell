@@ -142,11 +142,28 @@ h2 {
   font-size: 5rem;
   font-weight: normal;
 }
-
 h3, h4, h5, h6 {
-  font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 0.8em;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+
+ul > li > p {
+  margin: 0.4em 0;
+}
+
+/* ordinary blockquotes */
+blockquote.blockquote {
+  padding-left: 1em;
+  border-left: 3px solid #f6f6f6;
 }
 
 /* Code Inline / Blocks */
@@ -169,7 +186,7 @@ h3, h4, h5, h6 {
 /* code blocks */
 .code-block > table {
   width: 100%;
-  background-color: #fcfcfc;
+  background-color: #f9f9f9;
   padding: 15px 20px;
   margin-top: 1.3em;
   margin-bottom: 1.3em;
