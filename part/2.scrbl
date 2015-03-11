@@ -76,7 +76,7 @@ countColors ps = map countColor colors
   where countColor c = length $ filter (== c) ps}
 
 Maybe it could be better? I don't know. It looks fine to me. Now I'm supposed to use that function to
-find @tt{all possible} matches between two codes, but order doesn't matter. This is pretty simple,
+find @italic{all possible} matches between two codes, but order doesn't matter. This is pretty simple,
 too.
 
 @codeblock{

@@ -39,6 +39,10 @@ a:hover {
 
 /* ---------------- TOC ---------------- */
 
+@media screen and (max-width: 1340px) {
+  .tocset { display: none; }
+}
+
 .tocset {
   position: absolute;
   width: 16em;
