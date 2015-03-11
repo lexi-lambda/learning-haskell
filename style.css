@@ -137,6 +137,10 @@ a:hover {
   padding-right: 3em;
 }
 
+hr {
+  border: 1px solid #f6f6f6;
+  margin: 1.7em 0;
+}
 
 h2 {
   font-size: 5rem;
