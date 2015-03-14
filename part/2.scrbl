@@ -241,7 +241,7 @@ different types. Or am I missing something that ties them together?
 
 @section{It's types all the way down}
 
-Alright, I finally bit the bullet and took the time to read a fair portion of the RYAH chapter. I'm
+Alright, I finally bit the bullet and took the time to read a fair portion of the LYAH chapter. I'm
 sure I still barely understand anything, but I think I have enough of an idea to at least reason about
 things. From what I can tell, the reason I can't do @tt{liftA2 (-) max min} is because my functions
 are binary.
