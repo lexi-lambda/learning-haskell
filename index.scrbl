@@ -23,3 +23,4 @@ of what I figure out (to refer back to when I inevitably forget all of it).
 @include-section["part/0.scrbl"]
 @include-section["part/1.scrbl"]
 @include-section["part/2.scrbl"]
+@include-section["part/3.scrbl"]

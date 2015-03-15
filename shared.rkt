@@ -1,6 +1,6 @@
 #lang racket
 
-(provide ~~
+(provide ~~ /u/
          horizontal-rule-style horizontal-separator
          blockquote-style blockquote
          tty-style terminal
@@ -12,6 +12,12 @@
          scribble/html-properties)
 
 (define ~~ (string-append -~- -~-))
+
+(define (/u/ name)
+  (hyperlink (string-append "http://www.reddit.com/user/" name) name))
+
+;; formatting styles
+;; ---------------------------------------------------------------------------------------------------
 
 (define blockquote-style
   (make-style "blockquote" empty))
