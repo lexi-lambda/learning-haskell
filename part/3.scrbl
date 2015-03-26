@@ -145,7 +145,7 @@ instance (Applicative f, Applicative g) => Applicative (Compose f g) where
 
 Wow. I have no idea what that does.
 
-Okay, @tt{pure (pure x))} is obvious (and I almost wish it were written @tt{Compose . pure . pure}...,
+Okay, @tt{(pure (pure x))} is obvious (and I almost wish it were written @tt{Compose . pure . pure}...,
 I think I'm already losing myself to Haskell's convenient composition), but what about that crazy mess
 for @tt{<*>}?
 
